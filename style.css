@@ -3,8 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
+  text-decoration: none; 
 }
+ body{
+  width: 100%;
+  height: 100%;
+ overflow-x: hidden; 
+} 
 
 @media screen and (min-width: 768px) {
   .container1 {
@@ -192,7 +197,7 @@
   }
 
   .placeholder {
-    width: 684px;
+   width: 684px;
     height: 100%;
   }
 
@@ -217,7 +222,6 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
-    width: 327px;
     width: 448px;
     height: 140px;
     font-style: normal;
@@ -271,7 +275,7 @@
     line-height: 24px;
     padding: 12px;
     font-size: 17px;
-    width: 124px;
+    max-width: 124px;
     background-color: #C14703;;
     color:#fff;
   }
@@ -299,7 +303,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1156px;
+    width: 100%;
     gap: 24px;
     padding-bottom: 100px;
   }
@@ -307,7 +311,7 @@
   .card {
     display: flex;
     flex-direction: column;
-    width: 369px;
+    max-width: 369px;
     padding-top: 76px;
     gap: 14px;
     background-image:linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./img/card-bg1.png");
@@ -337,7 +341,7 @@
 
   .about-wrapper {
     display: flex;
-    width: 566px;
+    max-width: 566px;
     flex-direction: column;
     padding: 130px 1px;
     gap: 24px;
@@ -531,6 +535,10 @@
     color: #979493;
     height: 48px;
     margin-top: 35px;
+  }
+  .bottom-divider{
+    max-width: 1500px;
+    /* size: 10px; */
   }
 
   textarea {
